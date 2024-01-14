@@ -8,6 +8,7 @@ import Paper from "@mui/material/Paper";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import imageBG from '../images/ella-don-0oqMvhc1ntw-unsplash.jpg';
 
 export default function GameWithPC() {
   const [zeroORex, set_zeroORex] = useState("X");
@@ -140,6 +141,23 @@ export default function GameWithPC() {
       width: "100%"
     }}
   >
+
+    
+<img src={imageBG} alt=""   style={{
+
+
+height:"100vh",
+width:"100%",
+objectFit:"cover",
+position:"absolute",
+ zIndex:-1,
+ top:0,
+ borderRadius: '16px',
+ boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+ backdropFilter: 'blur(3.9px)',
+ 
+}}/>
+
       <Paper
         sx={{
           width: "100%",
@@ -149,13 +167,23 @@ export default function GameWithPC() {
           alignItems: "center",
           gap: "20px",
           position: "realtive",
-          marginTop:"6vw"
-        }}
-        elevation={6}
+          marginTop:"6vw",
+
+  background: 'rgba(255, 255, 255, 0.27)',
+  borderRadius: '16px',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(3.9px)',
+  WebkitBackdropFilter: 'blur(3.9px)',
+  backdropFilter:"blur(10px)",
+  
+}}
+elevation={6}
+
       >
 
-<div            style={{
-              backgroundColor: "#fafafa",
+<div
+
+style={{
               heigh: "50%",
               display: "flex",
               position: "absolute",
@@ -174,7 +202,6 @@ export default function GameWithPC() {
 
         <div
           style={{
-            backgroundColor: "#fafafa",
             height: "80%",
             width: "20%",
             display: "flex",
@@ -189,7 +216,7 @@ export default function GameWithPC() {
 
           <span
             style={{
-              color: "green",
+              color: "white",
               fontSize: "1.7vw",
                 fontWeight:"bold"
             }}
@@ -207,6 +234,7 @@ export default function GameWithPC() {
         <div
           style={{
             backgroundColor: "#fafafa",
+            borderRadius:"5px",
             heigh: "50%",
             display: "flex",
             position: "absolute",
@@ -245,7 +273,17 @@ export default function GameWithPC() {
           width: "30%",
           height:"86vh",
           bgcolor: "white",
-          overflow:"hidden"
+          overflow:"hidden",
+
+          
+    background: 'rgba(255, 255, 255, 0.27)',
+    borderRadius: '16px',
+    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(3.9px)',
+    WebkitBackdropFilter: 'blur(3.9px)',
+    border: '1px solid rgba(255, 255, 255, 0.12)',backdropFilter:"blur(10px)"
+
+
         }}
         cols={3}
         rowHeight={164}

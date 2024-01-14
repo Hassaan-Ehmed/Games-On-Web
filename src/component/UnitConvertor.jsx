@@ -8,6 +8,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import convert from "convert-units";
+import imageBG from '../images/mitchell-y-V6KsRZviGUU-unsplash.jpg'
 // var convert = require('convert-units')
 
 // import convert from 'convert-units';
@@ -110,6 +111,20 @@ if(value.label){
       <div
         style={{ display: "grid", placeItems: "center", marginTop: "100px" }}
       >
+        <img src={imageBG} alt=""   style={{
+
+
+height:"100vh",
+width:"100%",
+objectFit:"cover",
+position:"absolute",
+ zIndex:-1,
+ top:0,
+ borderRadius: '16px',
+ boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+ backdropFilter: 'blur(3.9px)',
+ 
+}}/>
         <div
           style={{
             height: "70vh",
@@ -125,6 +140,8 @@ if(value.label){
               justifyContent: "center",
               alignItems: "center",
               height: "100%",
+              
+              
             
             }}
             elevation={4}

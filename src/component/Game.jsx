@@ -7,7 +7,7 @@
   import ComputerIcon from '@mui/icons-material/Computer';
   import Typography from '@mui/material/Typography'
   import { Link } from "react-router-dom";
-
+  import imageBG from '../images/edge2edge-media-uKlneQRwaxY-unsplash.jpg';
 
   export default function Game() {
     const [zeroORex, set_zeroORex] = useState("O");
@@ -106,6 +106,21 @@
           width: "100%"
         }}
       >
+
+<img src={imageBG} alt=""   style={{
+
+
+height:"100vh",
+width:"100%",
+objectFit:"cover",
+position:"absolute",
+ zIndex:-1,
+ top:0,
+ borderRadius: '16px',
+ boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+ backdropFilter: 'blur(3.9px)',
+ 
+}}/>
      
       <Paper
           sx={{
@@ -116,7 +131,14 @@
             alignItems: "center",
             gap: "20px",
             position: "realtive",
-            marginTop:"6vw"
+            marginTop:"6vw",
+
+    background: 'rgba(255, 255, 255, 0.27)',
+    borderRadius: '16px',
+    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(3.9px)',
+    WebkitBackdropFilter: 'blur(3.9px)',
+    backdropFilter:"blur(10px)"
           }}
           elevation={6}
         >
@@ -124,7 +146,6 @@
  
 <div
             style={{
-              backgroundColor: "#fafafa",
               heigh: "50%",
               display: "flex",
               position: "absolute",
@@ -142,17 +163,18 @@
 
           <div
             style={{
-              backgroundColor: "#fafafa",
+
               height: "80%",
               width: "20%",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-around",
               alignItems: "center",
+
             }}
           >
             <h1 style={{
-              fontSize:"1.8vw"
+              fontSize:"1.8vw",
             }}>TIC TAC TOE</h1>
 
             <span
@@ -175,6 +197,7 @@
           <div
             style={{
               backgroundColor: "#fafafa",
+              borderRadius:"5px",
               heigh: "50%",
               display: "flex",
               position: "absolute",
@@ -212,8 +235,16 @@
           sx={{
             width: "30%",
             height:"86vh",
-            bgcolor: "white",
-            overflow:"hidden"
+            overflow:"hidden",
+
+    background: 'rgba(255, 255, 255, 0.27)',
+    borderRadius: '16px',
+    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(3.9px)',
+    WebkitBackdropFilter: 'blur(3.9px)',
+    border: '1px solid rgba(255, 255, 255, 0.12)',backdropFilter:"blur(10px)"
+
+
           }}
           cols={3}
           rowHeight={164}
@@ -245,6 +276,8 @@
             </IconButton>
           ))}
         </ImageList>
+
+        
       </div>
     );
   }
