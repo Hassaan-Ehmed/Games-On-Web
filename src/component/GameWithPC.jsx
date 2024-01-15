@@ -78,11 +78,14 @@ export default function GameWithPC() {
   const _handleGameClick = (index) => {
     if (zeroORex == "X") {
       if (itemData[index] == "") {
-        zeroORex == "X"
-          ? set_zeroORex("O")
-          : zeroORex == "O"
-          ? set_zeroORex("X")
-          : "";
+       
+        if(zeroORex == "X"){
+          set_zeroORex("O")
+        }else if (zeroORex == "O"){
+          set_zeroORex("X")
+        }
+        
+
 
         let COPY_itemData = [...itemData];
 
@@ -301,7 +304,7 @@ style={{
               color: "white",
               cursor: "pointer",
               borderRadius:5,
-              height : "120px",
+              height : "20vh",
                width:"96%",
                ":hover":{
                 backgroundColor:"darkgreen"},

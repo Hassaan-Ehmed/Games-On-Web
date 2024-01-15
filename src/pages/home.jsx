@@ -26,17 +26,18 @@ position:"absolute",
         {
             width:"100%",
              marginTop:"15vw",
-             position:"absolute"
+             position:"absolute",
+             
         } 
     }>
 
-<Grid item xl={3} lg={4} md={4} sm={6} xs={12}>
+<Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
   <HomePageCard title={"Tic Tac Toe"} subTitle={"Two Players"} image={Tic_Tac_Toe} link={"/tic-tac-toe"}/> </Grid>
 
-<Grid item xl={3} lg={4} md={4} sm={6} xs={12}>
+<Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
   <HomePageCard title={"Tic Tac Toe"} subTitle={"With Computer"} image={Tic_Tac_Toe_With_PC} link={"/tic-tac-toe/computer"}/> </Grid>
 
-<Grid item xl={3} lg={4} md={4} sm={6} xs={12}>
+<Grid item xl={4} lg={4} md={4} sm={6} xs={12}>
   <HomePageCard  title={"Unit Convertor"} subTitle={"Unit Conversion"} image={Unit_Convertor} link={'/unit-convertor'}/> </Grid>
 
 

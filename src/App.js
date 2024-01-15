@@ -4,7 +4,6 @@ import Navbar from './component/Navbar';
 import './App.css'
 import Home from './pages/home';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Unit_Convertor from './pages/unit-convertor';
 import Game from './component/Game';
 import GameWithPC from './component/GameWithPC'
 import Play from './MUI-Playground'
